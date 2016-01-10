@@ -6,7 +6,7 @@
 /*
    Multi-
       line comment
-      */
+*/
 
 /*
 Package main.
@@ -18,10 +18,15 @@ package main
 
 import "fmt"
 
-func main() {
-   //Mulitple statements separated by ;
-   fmt.Printf("Hello "); fmt.Printf("World\n")
+//import "fmt"
+// I commented the above code and ran goimports to get the import
+// file automatically added to the source code. goimports hello.go
 
-   // Single statement then ; not needed
+func main() {
+	//Mulitple statements separated by ;
+	fmt.Printf("Hello ")
+	fmt.Printf("World\n")
+
+	// Single statement then ; not needed
 	fmt.Printf("Learning Go.\n")
 }
